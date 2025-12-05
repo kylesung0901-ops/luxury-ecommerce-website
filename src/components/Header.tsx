@@ -17,22 +17,22 @@ export function Header({ onLoginClick, onSignupClick, user, onLogout }: HeaderPr
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-gradient-to-br from-yellow-500 to-yellow-700 rounded-lg flex items-center justify-center">
+          <a href="/" className="flex items-center space-x-2" aria-label="APEX BUILD 홈으로 이동">
+            <div className="w-10 h-10 bg-gradient-to-br from-yellow-500 to-yellow-700 rounded-lg flex items-center justify-center" aria-hidden="true">
               <span className="text-black font-bold">A</span>
             </div>
             <span className="text-2xl text-white tracking-tight">
               APEX <span className="text-yellow-500">BUILD</span>
             </span>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
-            <a href="#products" className="text-gray-300 hover:text-yellow-500 transition-colors">제품</a>
-            <a href="#custom" className="text-gray-300 hover:text-yellow-500 transition-colors">맞춤 제작</a>
-            <a href="#support" className="text-gray-300 hover:text-yellow-500 transition-colors">고객 지원</a>
-            <a href="#contact" className="flex items-center space-x-2 text-gray-300 hover:text-yellow-500 transition-colors">
-              <Phone className="w-4 h-4" />
+          <nav className="hidden lg:flex items-center space-x-8" aria-label="주요 메뉴">
+            <a href="#products" className="text-gray-300 hover:text-yellow-500 transition-colors" aria-label="제품 섹션으로 이동">제품</a>
+            <a href="#custom" className="text-gray-300 hover:text-yellow-500 transition-colors" aria-label="맞춤 제작 섹션으로 이동">맞춤 제작</a>
+            <a href="#support" className="text-gray-300 hover:text-yellow-500 transition-colors" aria-label="고객 지원 섹션으로 이동">고객 지원</a>
+            <a href="#contact" className="flex items-center space-x-2 text-gray-300 hover:text-yellow-500 transition-colors" aria-label="문의하기 섹션으로 이동">
+              <Phone className="w-4 h-4" aria-hidden="true" />
               <span>문의하기</span>
             </a>
           </nav>
@@ -83,11 +83,11 @@ export function Header({ onLoginClick, onSignupClick, user, onLogout }: HeaderPr
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
           <div className="lg:hidden py-4 border-t border-yellow-600/20">
-            <nav className="flex flex-col space-y-4">
-              <a href="#products" className="text-gray-300 hover:text-yellow-500 transition-colors py-2">제품</a>
-              <a href="#custom" className="text-gray-300 hover:text-yellow-500 transition-colors py-2">맞춤 제작</a>
-              <a href="#support" className="text-gray-300 hover:text-yellow-500 transition-colors py-2">고객 지원</a>
-              <a href="#contact" className="text-gray-300 hover:text-yellow-500 transition-colors py-2">문의하기</a>
+            <nav className="flex flex-col space-y-4" aria-label="모바일 메뉴">
+              <a href="#products" className="text-gray-300 hover:text-yellow-500 transition-colors py-2" aria-label="제품 섹션으로 이동">제품</a>
+              <a href="#custom" className="text-gray-300 hover:text-yellow-500 transition-colors py-2" aria-label="맞춤 제작 섹션으로 이동">맞춤 제작</a>
+              <a href="#support" className="text-gray-300 hover:text-yellow-500 transition-colors py-2" aria-label="고객 지원 섹션으로 이동">고객 지원</a>
+              <a href="#contact" className="text-gray-300 hover:text-yellow-500 transition-colors py-2" aria-label="문의하기 섹션으로 이동">문의하기</a>
               <div className="flex flex-col space-y-3 pt-4 border-t border-yellow-600/20">
                 {user ? (
                   <>

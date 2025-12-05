@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { onAuthStateChanged, signOut, User } from 'firebase/auth';
 import { auth } from './config/firebase';
 import { SEOHead } from './components/SEOHead';
+import { StructuredData } from './components/StructuredData';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Products } from './components/Products';
@@ -52,6 +53,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-black">
       <SEOHead />
+      <StructuredData />
       <Header 
         onLoginClick={() => setIsLoginOpen(true)}
         onSignupClick={() => setIsSignupOpen(true)}

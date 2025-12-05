@@ -18,8 +18,9 @@ export function ProductCard({ image, badge, name, specs, price, originalPrice, i
       <div className="relative aspect-[4/3] overflow-hidden bg-zinc-950">
         <ImageWithFallback 
           src={image}
-          alt={name}
+          alt={`${name} - APEX BUILD 프리미엄 조립 PC`}
           className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 via-transparent to-transparent opacity-60"></div>
         
@@ -45,7 +46,7 @@ export function ProductCard({ image, badge, name, specs, price, originalPrice, i
       </div>
 
       {/* Content */}
-      <div className="p-6">
+      <article className="p-6">
         <h3 className="text-xl text-white mb-4 group-hover:text-yellow-500 transition-colors">
           {name}
         </h3>
@@ -83,7 +84,7 @@ export function ProductCard({ image, badge, name, specs, price, originalPrice, i
             상세정보
           </button>
         </div>
-      </div>
+      </article>
     </div>
   );
 }

@@ -73,7 +73,7 @@ export function Products() {
           <h2 className="text-4xl lg:text-5xl text-white mb-4">
             완벽한 성능의 <span className="text-yellow-500">조립 PC</span>
           </h2>
-          <p className="text-gray-400 max-w-2xl mx-auto">
+          <p className="text-gray-400 max-w-2xl mx-auto" role="doc-subtitle">
             게이밍부터 전문가용까지, 모든 용도에 최적화된 시스템을 제공합니다
           </p>
         </div>

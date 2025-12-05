@@ -8,8 +8,9 @@ export function Hero() {
       <div className="absolute inset-0 z-0">
         <ImageWithFallback 
           src="https://images.unsplash.com/photo-1733945761533-727f49908d70?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxnYW1pbmclMjBjb21wdXRlciUyMHNldHVwfGVufDF8fHx8MTc2NDg2OTU0M3ww&ixlib=rb-4.1.0&q=80&w=1080"
-          alt="Gaming Setup"
+          alt="APEX BUILD 프리미엄 게이밍 PC 설정 - 고성능 게이밍 컴퓨터 워크스테이션"
           className="w-full h-full object-cover"
+          loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/90 to-black/70"></div>
       </div>
@@ -27,7 +28,7 @@ export function Hero() {
             </span>
           </h1>
           
-          <p className="text-xl text-gray-300 mb-10">
+          <p className="text-xl text-gray-300 mb-10" role="doc-subtitle">
             최고급 부품과 전문 기술력으로 제작하는<br className="hidden sm:block" />
             맞춤형 고성능 PC 솔루션
           </p>
@@ -50,33 +51,33 @@ export function Hero() {
 
           {/* Features */}
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="flex items-start space-x-3">
-              <div className="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center flex-shrink-0">
+            <article className="flex items-start space-x-3">
+              <div className="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center flex-shrink-0" aria-hidden="true">
                 <Cpu className="w-5 h-5 text-yellow-500" />
               </div>
               <div>
-                <h3 className="text-white mb-1">최신 부품</h3>
+                <h2 className="text-white mb-1 font-semibold">최신 부품</h2>
                 <p className="text-gray-400 text-sm">정품 인증 부품만 사용</p>
               </div>
-            </div>
-            <div className="flex items-start space-x-3">
-              <div className="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center flex-shrink-0">
+            </article>
+            <article className="flex items-start space-x-3">
+              <div className="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center flex-shrink-0" aria-hidden="true">
                 <Zap className="w-5 h-5 text-yellow-500" />
               </div>
               <div>
-                <h3 className="text-white mb-1">고성능</h3>
+                <h2 className="text-white mb-1 font-semibold">고성능</h2>
                 <p className="text-gray-400 text-sm">최상의 성능 보장</p>
               </div>
-            </div>
-            <div className="flex items-start space-x-3">
-              <div className="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center flex-shrink-0">
+            </article>
+            <article className="flex items-start space-x-3">
+              <div className="w-10 h-10 rounded-lg bg-yellow-500/10 flex items-center justify-center flex-shrink-0" aria-hidden="true">
                 <Shield className="w-5 h-5 text-yellow-500" />
               </div>
               <div>
-                <h3 className="text-white mb-1">3년 보증</h3>
+                <h2 className="text-white mb-1 font-semibold">3년 보증</h2>
                 <p className="text-gray-400 text-sm">안심 A/S 서비스</p>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </div>
